@@ -1,0 +1,59 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-size: 1.3rem;
+}
+span {
+  border: 1px orange !important;
+}
+
+.nav-bar li:first-child {
+  float: left;
+}
+
+.nav-bar li {
+  float: right;
+}
+
+.nav-bar li a {
+  display: block;
+  padding: 10px;
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+}
+
+.nav-bar li a:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  transition: 0.5s;
+}
+
+#products ul {
+  padding: 15px;
+}
+
+.fas {
+  color: steelblue !important;
+  float: right;
+  margin-right: 2vw;
+}
+section li {
+  margin-bottom: 10px;
+}
+section .numberofItem {
+  /* float: right; */
+  border: 1px solid steelblue;
+  background: steelblue;
+  width: 15px;
+  padding: 2px;
+  float: right;
+  text-align: center;
+  color: white;
+}
