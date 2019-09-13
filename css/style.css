@@ -2,12 +2,14 @@ body {
   padding: 0;
   margin: 0;
 }
+
 nav {
   background: coral;
   position: sticky;
   top: 0;
   z-index: 1;
 }
+
 ul {
   list-style: none;
   margin: 0;
@@ -15,6 +17,7 @@ ul {
   overflow: hidden;
   font-size: 1.3rem;
 }
+
 span {
   border: 1px orange !important;
 }
@@ -24,7 +27,6 @@ span {
 }
 
 .nav-bar li {
-  color: white;
   float: right;
 }
 
@@ -44,9 +46,11 @@ span {
 #products ul {
   padding: 15px;
 }
+
 #productNames {
   padding: 0px !important;
 }
+
 #productNames li {
   float: left;
   padding: 10px;
@@ -57,9 +61,11 @@ span {
   float: right;
   margin-right: 2vw;
 }
+
 section li {
   margin-bottom: 10px;
 }
+
 section .numberofItem {
   /* float: right; */
   border: 1px solid steelblue;
@@ -70,9 +76,11 @@ section .numberofItem {
   text-align: center;
   color: white;
 }
+
 .productPostion {
   position: absolute;
 }
+
 .hide {
   opacity: 0;
   transition: 0.8s;
@@ -82,6 +90,7 @@ section .numberofItem {
   opacity: 1;
   transition: 0.9s;
 }
+
 .productPostion:nth-child(0) {
   background: orange;
 }
@@ -96,9 +105,11 @@ section .numberofItem {
   color: #333;
   font-size: 2rem;
 }
+
 .bit-bucket {
   padding: 10px;
 }
+
 .fa-bitbucket::after {
   content: attr(data-content);
   color: #fff;
@@ -106,11 +117,13 @@ section .numberofItem {
   margin-left: -10px;
   top: -10px !important;
 }
+
 #products li {
   text-align: center;
   padding: 10px;
   float: left;
 }
+
 #productNames {
   position: fixed !important;
   top: 38px !important;
@@ -118,27 +131,44 @@ section .numberofItem {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.8);
 }
+
 #productsNames li {
   /* align-content: center;
   justify-content: center; */
 }
+
 #products {
   display: flex;
   align-content: center;
   justify-content: center;
 }
+
 .productPostion {
   margin-top: 50px;
 }
+
 img {
   width: 300px;
   height: 350px;
 }
+
+.bar {
+  padding: 10px;
+}
+
+.bar div {
+  background: white;
+  width: 15px;
+  height: 2px;
+  margin-bottom: 3px;
+}
+
 @media only screen and (max-width: 700px) {
   img {
     width: 200px;
     height: 250px;
   }
+
   #products li {
     text-align: center;
     padding: 10px;
@@ -148,4 +178,17 @@ img {
   #productNames li {
     float: left;
   }
+
+  .nav-bar a {
+    font-size: 1rem;
+  }
+
+  .nav-bar li {
+    padding: 1px;
+  }
+
+  .fa-bitbucket {
+    padding: 10px;
+  }
+
 }
