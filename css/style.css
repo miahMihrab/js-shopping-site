@@ -40,6 +40,13 @@ span {
 #products ul {
   padding: 15px;
 }
+#productNames {
+  padding: 0px !important;
+}
+#productNames li {
+  float: left;
+  padding: 10px;
+}
 
 .fas {
   color: steelblue !important;
@@ -58,4 +65,42 @@ section .numberofItem {
   float: right;
   text-align: center;
   color: white;
+}
+.productPostion {
+  position: absolute;
+  border: 1px solid green;
+}
+.hide {
+  visibility: hidden;
+}
+.productPostion:nth-child(0) {
+  background: orange;
+}
+.show {
+  visibility: visible;
+}
+#products {
+  background: green;
+}
+
+#selectedItems {
+  float: right;
+  background: #ddd;
+  padding: 1rem;
+}
+
+.fa-bitbucket {
+  color: #a9a9a9;
+  font-size: 2rem;
+}
+.bit-bucket {
+  padding: 10px;
+}
+.fa-bitbucket::after {
+  content: attr(data-content);
+  color: rgb(228, 75, 20);
+  position: relative;
+  margin-left: -10px;
+  top: -10px !important;
+  /* font-size: 1.5rem;
 }

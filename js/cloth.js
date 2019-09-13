@@ -1,6 +1,7 @@
 const clth_list = document.querySelector(".cloth-list");
 const number_Of_Item = document.querySelector(".number_Of_Item");
 const allProducts = ["cloth one", "cloth two", "cloth three"];
+let busket = document.querySelector('.nav-bar').children[5].children[0];
 
 
 {
@@ -31,16 +32,22 @@ clth_list.addEventListener("click", e => {
                 selectedProduct[productType] = [pd];
                 selectedProduct[productType][pd] = 1;
                 e.target.parentElement.children[1].textContent = 1;
+                busket.setAttribute('data-content', (parseInt(busket.dataset.content) + 1));
+
             } else {
                 if (!selectedProduct[productType][pd]) {
                     //If the ProductType exist but the user selected multiple product of the same type
                     selectedProduct[productType][pd] = 1;
                     e.target.parentElement.children[1].textContent = 1;
+                    busket.setAttribute('data-content', (parseInt(busket.dataset.content) + 1));
+
                 } else {
                     let c = selectedProduct[productType][pd] + 1;
                     selectedProduct[productType][pd] = c;
 
                     e.target.parentElement.children[1].textContent = c;
+                    busket.setAttribute('data-content', (parseInt(busket.dataset.content) + 1));
+
                 }
             }
 
@@ -62,6 +69,7 @@ clth_list.addEventListener("click", e => {
                     if (selectedProduct[productType][pd] > 0) {
                         let c = selectedProduct[productType][pd] - 1;
                         selectedProduct[productType][pd] = c;
+                        busket.setAttribute('data-content', (parseInt(busket.dataset.content) - 1));
 
                         e.target.parentElement.children[1].textContent = c;
                     } else {
